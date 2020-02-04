@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Haeder'; 
 import Buttons from './Buttons';
-import Screen from './Screen' 
+import Screen from './Screen'; 
 
 class App extends Component {
   constructor () {
     super (); 
     this.state = { results: ''}
   }
+
+
 
   buttonPressed = buttonName => {
     if (buttonName==='=') this.calculate() 
